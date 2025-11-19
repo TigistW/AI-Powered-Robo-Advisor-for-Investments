@@ -2,16 +2,16 @@
 from fastapi import FastAPI
 
 # Import all agent FastAPI apps
-from services.user_agent.main import app as user_app
-from services.model_agent.main import app as model_app
-from services.planner_agent.main import app as planner_app
-from services.orchestrator_agent.main import app as orch_app
-from services.data_agent.main import app as data_app
+from .services.user_agent.main import app as user_app
+from .services.model_agent.main import app as model_app
+from .services.planner_agent.main import app as planner_app
+from .services.orchestrator_agent.main import app as orch_app
+from .services.data_agent.main import app as data_app
 
-from optimized_services.user_agent.main import app as opt_user_app
-from optimized_services.orchestrator_agent.main import app as opt_orch_app
-from optimized_services.planner_agent.main import app as opt_planner_app
-from optimized_services.model_agent.main import app as opt_model_app
+from .optimized_services.user_agent.main import app as opt_user_app
+from .optimized_services.orchestrator_agent.main import app as opt_orch_app
+from .optimized_services.planner_agent.main import app as opt_planner_app
+from .optimized_services.model_agent.main import app as opt_model_app
 
 app = FastAPI(title="All Agents Hosted Together")
 
