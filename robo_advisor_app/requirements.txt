@@ -1,6 +1,10 @@
 fastapi
 uvicorn
+gunicorn
 yfinance
 pydantic
 pandas
 httpx
+numpy
+scikit-learn
+joblib
