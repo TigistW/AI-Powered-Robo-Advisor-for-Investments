@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from app.core.schema import QuestionnaireInput, UserProfile
-from app.services.questionnaire import QuestionnaireService
-from app.services.profile_builder import ProfileBuilder
+from .core.schema import QuestionnaireInput, UserProfile
+from .services.questionnaire import QuestionnaireService
+from .services.profile_builder import ProfileBuilder
 
 router = APIRouter()
 

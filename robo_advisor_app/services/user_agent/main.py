@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers.user import router as user_router
+from .routers.user import router as user_router
 
 app = FastAPI(
     title="User Agent Service",
